@@ -35,13 +35,24 @@
     }
 
     .main-section {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 2rem;
-      flex-wrap: wrap;
-    }
+     display: flex;
+     justify-content: center;
+     gap: 4rem;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 2rem;
+     flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}
+
 
     .left-column {
       flex: 1;
